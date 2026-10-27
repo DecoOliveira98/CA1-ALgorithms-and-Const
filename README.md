@@ -19,16 +19,17 @@ Trays are added through the **front side** of the unit and removed from the **op
 | 4   | 26/10/2026 | `.gitignore`       | Ignored build output (`target/`, `*.class`) and IDE files                                                         |
 | 5   | 26/10/2026 | Java 17            | Updated `pom.xml` from Java 1.7 to 17 (1.7 is not supported by current JDKs and has no `java.time` API for dates) |
 | 6   | 26/10/2026 | Class structure    | Created the skeleton of all classes (see below) and removed the archetype sample files                            |
-| 7   | _next_     | README             | Organised this README with the project timeline                                                                   |
-| 8 | 26/10/2026 | FoodType | Enum with the five foods, display names and parsing of user input (number or name) |
-| 9 | 26/10/2026 | FoodItem | Constructor, validation (weight 1-5000 g, best-before ≤ 14 days), getters and toString |
+| 7   | 26/10/2026 | README             | Organised this README with the project timeline                                                                   |
+| 8   | 26/10/2026 | FIFO decision      | Chose a FIFO Queue on a circular array (removed RemovalMode)                                                      |
+| 9   | 26/10/2026 | FoodType           | Enum with the five foods, display names and parsing of user input (number or name)                                |
+| 10  | 26/10/2026 | FoodItem           | Constructor, validation (weight 1-5000 g, best-before ≤ 14 days), getters and toString                            |
+| 11  | 27/10/2026 | FoodStorage        | FIFO circular queue: enqueue, dequeue, peek, isEmpty, isFull, getAll, search                                      |
 
 ### 🔜 Next steps
 - [x] `FoodType` – display names and parsing user input
 - [x] `FoodItem` – constructor, validation (weight, best-before ≤ 14 days), getters, `toString`
-- [ ] `FoodStorage` – `addFront`, `isEmpty`, `isFull`
-- [ ] `FoodStorage` – `removeFront` (LIFO) and `removeRear` (FIFO)
-- [ ] `FoodStorage` – `peek`, display, `search`
+- [x] `FoodStorage` – `addFront`, `isEmpty`, `isFull`
+- [x] `FoodStorage` – `peek`, display, `search`
 - [ ] `FoodStorageApp` – menu with input validation and error handling
 - [ ] JUnit 5 tests
 - [ ] Time-complexity analysis
