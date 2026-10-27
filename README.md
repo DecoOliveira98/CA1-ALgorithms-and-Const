@@ -24,13 +24,14 @@ Trays are added through the **front side** of the unit and removed from the **op
 | 9   | 26/10/2026 | FoodType           | Enum with the five foods, display names and parsing of user input (number or name)                                |
 | 10  | 26/10/2026 | FoodItem           | Constructor, validation (weight 1-5000 g, best-before ≤ 14 days), getters and toString                            |
 | 11  | 27/10/2026 | FoodStorage        | FIFO circular queue: enqueue, dequeue, peek, isEmpty, isFull, getAll, search                                      |
+| 12  | 27/10/2026 | FoodStorageApp     | Console menu with input validation and error handling                                                             |
 
 ### 🔜 Next steps
 - [x] `FoodType` – display names and parsing user input
 - [x] `FoodItem` – constructor, validation (weight, best-before ≤ 14 days), getters, `toString`
 - [x] `FoodStorage` – `addFront`, `isEmpty`, `isFull`
 - [x] `FoodStorage` – `peek`, display, `search`
-- [ ] `FoodStorageApp` – menu with input validation and error handling
+- [x] `FoodStorageApp` – menu with input validation and error handling
 - [ ] JUnit 5 tests
 - [ ] Time-complexity analysis
 - [ ] Poster (PPT) and video
